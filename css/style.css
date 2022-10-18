@@ -1,0 +1,100 @@
+/*@media screen and (min-width: 30em) {*/
+
+    section {
+        padding-bottom: 25px;
+    }
+
+    /*----------------------------------------------*/
+    /*-----------------MENÜ-1-----------------------*/
+    /*----------------------------------------------*/
+
+    .single-nav ul {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        border: 1px solid black;
+        list-style: none;
+        display: flex;
+        justify-content: center; /* funktioniert nicht, wenn's Wachsen erlaubt */
+        flex-wrap: wrap; /* Zeilenumbruch */
+    }
+
+    .single-nav ul li {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .single-nav ul li:hover, li:focus {
+        background-color: hsl(0 0% 15%);
+    }
+
+    .single-nav li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        width: 100%;
+    }
+
+    /*----------------------------------------------*/
+
+    /*----------------------------------------------*/
+    /*-----------------MENÜ-2-----------------------*/
+    /*----------------------------------------------*/
+
+    .plus-advanced-nav ul li {
+        padding: 0;
+        text-align: left;
+        display: flex;
+        /* kurze Form von flex-grow: 1 - Wachsen erlaubt,
+        flex-shrink: 0 - kein Schrumpfen (rs. уплотняться),
+        flex-basis: auto - automatische Breite oder fixierte Breite
+        wegen Zeilenumbruch wird zweite Zeile anders aussehen */
+        flex: 0 0 200px; /* auch flex: 1 0 200px; */
+    }
+
+    .plus-advanced-nav li a {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .plus-advanced-nav .icon {
+        font-size: 25px;
+        color: white;
+        flex: 0 0 38px; /* nicht wachsen, nicht schrumpfen, 38px breit */
+    }
+
+    .plus-advanced-nav .button {
+        font-size: 18px;
+    }
+
+    .plus-advanced-nav .button span {
+        display: block;
+        font-size: 15px;
+        font-weight: lighter;
+        font-style: italic;
+    }
+
+    /*----------------------------------------------*/
+
+    /*----------------------------------------------*/
+    /*-----------------MENÜ-3-----------------------*/
+    /*----------------------------------------------*/
+
+    .together {
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .search {
+        display: flex;
+        padding: 0 5px;
+        margin: 10px;
+        height: 26px;
+        width: 250px;
+    }
+
+    /*----------------------------------------------*/
+
+/*}*/
