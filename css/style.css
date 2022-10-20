@@ -121,6 +121,7 @@ body {
         }
         .card {
             flex: 0 1 calc(50% - 0.5em);
+            display: flex; /* damit wird das ganze Block als ein Hyperlink gelten und Schatten gezeigt */
         }
     }
 
